@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>z5.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #2aacb8;}
+.s3 { color: #cf8e6d;}
+.s4 { color: #7a7e85;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+z5.py</font>
+</center></td></tr></table>
+<pre><span class="s0">num </span><span class="s1">= </span><span class="s0">list</span><span class="s1">(</span><span class="s0">range</span><span class="s1">(</span><span class="s2">1</span><span class="s1">, </span><span class="s2">21</span><span class="s1">))</span>
+
+<span class="s0">h </span><span class="s1">= </span><span class="s0">list</span><span class="s1">(</span><span class="s0">filter</span><span class="s1">(</span><span class="s3">lambda </span><span class="s0">x</span><span class="s1">: </span><span class="s0">x </span><span class="s1">% </span><span class="s2">2 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">, </span><span class="s0">num</span><span class="s1">)) </span><span class="s4"># оставляет только четные</span>
+<span class="s0">u </span><span class="s1">= </span><span class="s0">list</span><span class="s1">(</span><span class="s0">map</span><span class="s1">(</span><span class="s3">lambda </span><span class="s0">x</span><span class="s1">: </span><span class="s0">x </span><span class="s1">+ </span><span class="s2">10</span><span class="s1">, </span><span class="s0">h</span><span class="s1">)) </span><span class="s4"># прибавляет к каждому 10</span>
+<span class="s0">i </span><span class="s1">= </span><span class="s0">sorted</span><span class="s1">(</span><span class="s0">u</span><span class="s1">, </span><span class="s0">reverse</span><span class="s1">=</span><span class="s3">True</span><span class="s1">) </span><span class="s4"># сортировка по убыванию</span>
+
+<span class="s0">print</span><span class="s1">(</span><span class="s5">&quot;Изначальный список:&quot;</span><span class="s1">, </span><span class="s0">num</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s5">&quot;Чётные числа:&quot;</span><span class="s1">, </span><span class="s0">h</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s5">&quot;Увеличенные на 10:&quot;</span><span class="s1">, </span><span class="s0">u</span><span class="s1">)</span>
+<span class="s0">print</span><span class="s1">(</span><span class="s5">&quot;Отсортированные по убыванию:&quot;</span><span class="s1">, </span><span class="s0">i</span><span class="s1">)</span></pre>
+</body>
+</html>

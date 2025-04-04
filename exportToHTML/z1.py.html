@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>z1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+z1.py</font>
+</center></td></tr></table>
+<pre><span class="s0">with </span><span class="s1">open</span><span class="s2">(</span><span class="s3">&quot;data.txt&quot;</span><span class="s2">, </span><span class="s3">&quot;r&quot;</span><span class="s2">) </span><span class="s0">as </span><span class="s1">file</span><span class="s2">: </span><span class="s4"># открываем наш файл только для чтения</span>
+    <span class="s1">num </span><span class="s2">= [</span><span class="s1">int</span><span class="s2">(</span><span class="s1">line</span><span class="s2">.</span><span class="s1">strip</span><span class="s2">()) </span><span class="s0">for </span><span class="s1">line </span><span class="s0">in </span><span class="s1">file</span><span class="s2">.</span><span class="s1">readlines</span><span class="s2">()] </span><span class="s4"># считываем числа из файла и делаем из них список</span>
+    <span class="s1">s </span><span class="s2">= </span><span class="s1">sum</span><span class="s2">(</span><span class="s1">num</span><span class="s2">)</span>
+    <span class="s1">a </span><span class="s2">= </span><span class="s1">s </span><span class="s2">/ </span><span class="s1">len</span><span class="s2">(</span><span class="s1">num</span><span class="s2">)</span>
+    <span class="s1">max </span><span class="s2">= </span><span class="s1">max</span><span class="s2">(</span><span class="s1">num</span><span class="s2">)</span>
+    <span class="s1">min </span><span class="s2">= </span><span class="s1">min</span><span class="s2">(</span><span class="s1">num</span><span class="s2">)</span>
+<span class="s0">with </span><span class="s1">open</span><span class="s2">(</span><span class="s3">&quot;result.txt&quot;</span><span class="s2">, </span><span class="s3">&quot;w&quot;</span><span class="s2">, </span><span class="s1">encoding </span><span class="s2">= </span><span class="s3">&quot;utf-8&quot;</span><span class="s2">) </span><span class="s0">as </span><span class="s1">file</span><span class="s2">: </span><span class="s4"># используем кодировку чтобы русские букавы были отображаемы и создаем файл результатов</span>
+    <span class="s1">file</span><span class="s2">.</span><span class="s1">write</span><span class="s2">(</span><span class="s3">f&quot;Сумма: </span><span class="s0">{</span><span class="s1">s</span><span class="s0">}\n</span><span class="s3">&quot;</span><span class="s2">)</span>
+    <span class="s1">file</span><span class="s2">.</span><span class="s1">write</span><span class="s2">(</span><span class="s3">f&quot;Среднее: </span><span class="s0">{</span><span class="s1">a</span><span class="s0">}\n</span><span class="s3">&quot;</span><span class="s2">)</span>
+    <span class="s1">file</span><span class="s2">.</span><span class="s1">write</span><span class="s2">(</span><span class="s3">f&quot;Максимум: </span><span class="s0">{</span><span class="s1">max</span><span class="s0">}\n</span><span class="s3">&quot;</span><span class="s2">)</span>
+    <span class="s1">file</span><span class="s2">.</span><span class="s1">write</span><span class="s2">(</span><span class="s3">f&quot;Минимум: </span><span class="s0">{</span><span class="s1">min</span><span class="s0">}\n</span><span class="s3">&quot;</span><span class="s2">)  </span>
+</pre>
+</body>
+</html>
