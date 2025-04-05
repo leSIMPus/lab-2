@@ -1,0 +1,4 @@
+Сумма: 349
+Srednee: 34.9
+Maksimum: 96
+Minimum: 1
